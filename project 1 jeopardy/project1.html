@@ -5,91 +5,167 @@
 <link rel="stylesheet" type="text/css" href="project1.css">
 </head>
 <body>
+
+<ul class="nav">
+  <li class="navE"><a href="project1.html">Reset</a></li>
+</ul>
+
 <h1>Jeopardy</h1>
 
-<table>
+<div id="container">
+<table class="visuals" id="left">
 <tr>
-	<th>Category 1</th>
-	<th>Category 2</th>
-	<th>Category 3</th>
-	<th>Category 4</th>
-	<th>Category 5</th>
-	<th>Category 6</th>
+	<td class= "visuals top">
+	</td>
 </tr>
 <tr>
-	<td>$200</td>
-	<td>$200</td>
-	<td>$200</td>
-	<td>$200</td>
-	<td>$200</td>
-	<td>$200</td>
+	<td class = "visuals">-
+	</td>
 </tr>
 <tr>
-	<td>$400</td>
-	<td>$400</td>
-	<td>$400</td>
-	<td>$400</td>
-	<td>$400</td>
-	<td>$400</td>
+	<td class = "visuals">-
+	</td>
 </tr>
 <tr>
-	<td>$600</td>
-	<td>$600</td>
-	<td>$600</td>
-	<td>$600</td>
-	<td>$600</td>
-	<td>$600</td>
+	<td class = "visuals">-
+	</td>
 </tr>
 <tr>
-	<td>$800</td>
-	<td>$800</td>
-	<td>$800</td>
-	<td>$800</td>
-	<td>$800</td>
-	<td>$800</td>
+	<td class = "visuals">-
+	</td>
 </tr>
 <tr>
-	<td class="lastRow">$1000</td>
-	<td class="lastRow">$1000</td>
-	<td class="lastRow">$1000</td>
-	<td class="lastRow">$1000</td>
-	<td class="lastRow">$1000</td>
-	<td class="lastRow">$1000</td>
+	<td class = "visuals">-
+	</td>
+</tr>
+<tr>
+	<td class = "visuals bottom">
+	</td>
 </tr>
 </table>
 
+
+<table class="game" id="center" >
+<tr>
+	<th class="game">Category 1</th>
+	<th class="game">Category 2</th>
+	<th class="game">Category 3</th>
+	<th class="game">Category 4</th>
+	<th class="game">Category 5</th>
+	<th class="game">Category 6</th>
+</tr>
+<tr>
+	<td class="game">
+			<form>
+			<input class="q" type="button" value="$200" 
+			onclick="window.location.href='q1.html'" target="_blank" />
+						</form>
+	</td>
+	<td class="game">$200</td>
+	<td class="game">$200</td>
+	<td class="game">$200</td>
+	<td class="game">$200</td>
+	<td class="game">$200</td>
+</tr>
+<tr>
+	<td class="game">$400</td>
+	<td class="game">$400</td>
+	<td class="game">$400</td>
+	<td class="game">$400</td>
+	<td class="game">$400</td>
+	<td class="game">$400</td>
+</tr>
+<tr>
+	<td class="game">$600</td>
+	<td class="game">$600</td>
+	<td class="game">$600</td>
+	<td class="game">$600</td>
+	<td class="game">$600</td>
+	<td class="game">$600</td>
+</tr>
+<tr>
+	<td class="game">$800</td>
+	<td class="game">$800</td>
+	<td class="game">$800</td>
+	<td class="game">$800</td>
+	<td class="game">$800</td>
+	<td class="game">$800</td>
+</tr>
+<tr>
+	<td class="lastRow game">$1000</td>
+	<td class="lastRow game">$1000</td>
+	<td class="lastRow game">$1000</td>
+	<td class="lastRow game">$1000</td>
+	<td class="lastRow game">$1000</td>
+	<td class="lastRow game">$1000</td>
+</tr>
+</table>
+
+<table class="visuals" id="right">
+<tr>
+	<td class= "visuals top">
+	</td>
+</tr>
+<tr>
+	<td class = "visuals">-
+	</td>
+</tr>
+<tr>
+	<td class = "visuals">-
+	</td>
+</tr>
+<tr>
+	<td class = "visuals">-
+	</td>
+</tr>
+<tr>
+	<td class = "visuals">-
+	</td>
+</tr>
+<tr>
+	<td class = "visuals">-
+	</td>
+</tr>
+<tr>
+	<td class = "visuals bottom">
+	</td>
+</tr>
+</table>
+</div>
+<div class="allscores">
+
 <div class="score one fLeftb">
 	<span class="fLeft name">Player/Team Name: </span>
-    <input class="fLeft" type="text" name="player1" value="Player 1">
+    <input class="fLeft dwidth" type="text" name="player1" value="Player 1">
 	<br>
 	<br>
 	<span class="fLeft money">Money: $</span>
-	<input class="fLeft iSize" type="number" id="money" step="100" value="0">
+	<input class="fLeft iSize dwidth" type="number" id="money" step="100" value="0">
 </div>
 <div class="score two fLeftb">
 	<span class="fLeft name">Player/Team Name: </span>
-    <input class="fLeft" type="text" name="player1" value="Player 2">
+    <input class="fLeft dwidth" type="text" name="player1" value="Player 2">
 	<br>
 	<br>
 	<span class="fLeft money">Money: $</span>
-	<input class="fLeft iSize" type="number" id="money" step="100" value="0">
+	<input class="fLeft iSize dwidth" type="number" id="money" step="100" value="0">
 </div>
 <div class="score three fLeftb">
 	<span class="fLeft name">Player/Team Name: </span>
-    <input class="fLeft" type="text" name="player1" value="Player 3">
+    <input class="fLeft dwidth" type="text" name="player1" value="Player 3">
 	<br>
 	<br>
 	<span class="fLeft money">Money: $</span>
-	<input class="fLeft iSize" type="number" id="money" step="100" value="0">
+	<input class="fLeft iSize dwidth" type="number" id="money" step="100" value="0">
 </div>
 <div class="score four fLeftb">
 	<span class="fLeft name">Player/Team Name: </span>
-    <input class="fLeft" type="text" name="player1" value="Player 4">
+    <input class="fLeft dwidth" type="text" name="player1" value="Player 4">
 	<br>
 	<br>
 	<span class="fLeft money">Money: $</span>
-	<input class="fLeft iSize" type="number" id="money" step="100" value="0">
+	<input class="fLeft iSize dwidth" type="number" id="money" step="100" value="0">
 </div>  
-
+</div>
 </body>
 </html>
