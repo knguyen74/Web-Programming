@@ -66,7 +66,7 @@ th.game{
 	font-size: 30px;
 
 }
-td.game{
+td.game{	
 	color:yellow;
 	text-align:center;
     font-weight: 900;
@@ -145,8 +145,13 @@ input.q{
 	padding-bottom:80px;
 }
 input:hover {
-    background-color: white; /* Green */
+    background-color: white; 
     color: black;
+}
+input:visited{
+color:grey; }
+.check{
+	float:right;
 }
 
 ul.nav {
@@ -209,3 +214,4 @@ div.allscores{
 	margin-right:52px;
 
 }
+
