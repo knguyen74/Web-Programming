@@ -101,12 +101,6 @@ td.lastRow{
 	padding-bottom:0px;
 	text-align:right;
 }
-.fLeftb{
-	float: left;
-	margin-top:10px;
-	margin-bottom:5px;
-	margin-left: 50px;
-}
 .rmargin{
 	margin:0px;
 	margin-top:3px;
@@ -119,13 +113,18 @@ div.score{
 	height:85px;
 	width: 240px;
 	border-style: double;
+	margin-left: 50px;
+	float: left;
+	margin-top:10px;
 	
 }
 div.allscores{
 	width:1235px;
-	height:150px;
+	height:100px;
 	margin-left:auto; 
     margin-right:auto;
+	margin-top:0px;
+	padding:0px;
 }
 
 
