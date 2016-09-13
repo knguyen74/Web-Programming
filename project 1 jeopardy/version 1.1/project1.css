@@ -154,22 +154,29 @@ div.four{
 
 
 input.q{
-	height:30px;
+	position:relative;
+	height:58px;
 	width:135px;
 	color:yellow;
 	background-color:navy;
 	font-weight: 900;
 	font-size: 30px;
 	padding-bottom:40px;
+	padding-top:6px;
+
 }
 input:hover {
     background-color: white; 
     color: black;
 }
-
+.cell{
+		position:relative;
+}
 .check{
-	float:right;
-	margin:0;
+	position:absolute;
+    right:0px;
+    top:0px;
+
 }
 
 ul.nav {
