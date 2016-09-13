@@ -1,183 +1,30 @@
-p{
+p
+{
 	font-family: verdana;
 }
-img{
+img
+{
 	margin: 0 auto;
 	height:100px;
 }
-body{
+body
+{
 	margin:0;
 	text-align:center;
 }
-h1 {
+h1 
+{
 	text-align:center;
 	font-size: 75px;
 	margin-bottom:5px;
 	margin-top:20px;
 }
-h2 {
+h2 
+{
 	text-align:center;
 	font-size: 60px;
 }
-
-table.visuals{
-	background-color:black;
-	font-size: 43px;
-	margin-right:-100px;
-	float:left;
-	width:10px;
-	}
-	
-td.visuals{
-	height:30px;
-	padding-bottom:8px;
-	background-color:orange;
-	border-left: 20px solid #2874A6    ;
-	border-right: 20px solid #2874A6    ;
-	}
-td.top{
-	background-color:orange;
-	border-left: 20px solid #2874A6    ;
-	border-right: 20px solid #2874A6    ;
-	border-top: 20px solid #2874A6    ;
-	height:26px;
-
-	margin-bottom:0;
-	}
-td.bottom{
-	background-color:orange;
-	border-left: 20px solid #2874A6    ;
-	border-right: 20px solid #2874A6    ;
-	border-bottom: 20px solid #2874A6    ;
-
-	height:26px;
-	margin-top:0;
-	}
-	
-
-table.game{
-	background-color:black;
-	font-size: 35px;
-    margin-left:auto; 
-    margin-right:auto;
-}
-th.game{
-	color:white;
-	text-align:center;
-	background-color:blue;
-	padding:10px;
-	border: 10px solid black;
-	font-size: 25px;
-
-}
-td.game{	
-	color:yellow;
-	text-align:center;
-    font-weight: 900;
-	background-color:Navy ;
-	border: 10px solid black;
-	border-bottom: 3px solid black;
-	border-top: 3px solid black;
-}
-td.lastRow{
-	color:yellow;
-	text-align:center;
-    font-weight: 900;
-	background-color:Navy ;
-	border: 10px solid black;
-	border-bottom: 6px solid black;
-	border-top: 6px solid black;
-}
-
-
-
-
-
-.fLeft{
-	float: left;
-	margin: 10px;
-	margin-bottom:0px;
-	margin-top:1px;
-	padding-bottom:0px;
-	text-align:right;
-}
-.rmargin{
-	margin:0px;
-	margin-top:3px;
-	margin-left:3px;
-}
-.dwidth{
-	width:100px;
-}
-div.score{
-	height:85px;
-	width: 240px;
-	border-style: double;
-	margin-left: 50px;
-	float: left;
-	margin-top:10px;
-	
-}
-div.allscores{
-	width:1235px;
-	height:100px;
-	margin-left:auto; 
-    margin-right:auto;
-	margin-top:0px;
-	padding:0px;
-}
-
-
-div.one{
-		background-color:#FF4141;
-}
-div.two{
-		background-color:lime;
-}
-div.three{
-		background-color:cyan;
-}
-div.four{
-		background-color:yellow;
-}
-.money{
-    font-size: 31px;
-}
-.name{
-    font-size: 15px;
-}
-.iSize{
-	margin-left:5px;
-	font-size: 31px;
-}
-
-
-input.q{
-	position:relative;
-	height:58px;
-	width:135px;
-	color:yellow;
-	background-color:navy;
-	font-weight: 900;
-	font-size: 30px;
-	padding-bottom:40px;
-	padding-top:6px;
-
-}
-input:hover {
-    background-color: white; 
-    color: black;
-}
-.cell{
-		position:relative;
-}
-.check{
-	position:absolute;
-    right:0px;
-    top:0px;
-
-}
-
+/*navegation bar*/
 ul.nav {
     list-style-type: none;
     margin: 0;
@@ -200,14 +47,188 @@ li.navE a {
     padding: 14px 16px;
     text-decoration: none;
 }
+/*end of navegation bar */
+
+/*for vertical table that is for visuals only*/
+table.visuals
+{
+	background-color:black;
+	font-size: 43px;
+	margin-right:-100px;
+	float:left;
+	width:10px;
+}
+td.visuals
+{
+	height:30px;
+	padding-bottom:8px;
+	background-color:orange;
+	border-left: 20px solid #2874A6    ;
+	border-right: 20px solid #2874A6    ;
+}
+td.top
+{
+	background-color:orange;
+	border-left: 20px solid #2874A6    ;
+	border-right: 20px solid #2874A6    ;
+	border-top: 20px solid #2874A6    ;
+	height:26px;
+
+	margin-bottom:0;
+}
+td.bottom
+{
+	background-color:orange;
+	border-left: 20px solid #2874A6    ;
+	border-right: 20px solid #2874A6    ;
+	border-bottom: 20px solid #2874A6    ;
+	height:26px;
+	margin-top:0;
+}
+/*vertical table end*/
+
+/*game table*/
+table.game
+{
+	background-color:black;
+	font-size: 35px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+th.game
+{
+	color:white;
+	text-align:center;
+	background-color:blue;
+	padding:10px;
+	border: 10px solid black;
+	font-size: 25px;
+}
+td.game
+{	
+	color:yellow;
+	text-align:center;
+    font-weight: 900;
+	background-color:Navy ;
+	border: 10px solid black;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+}
+td.lastRow
+{
+	color:yellow;
+	text-align:center;
+    font-weight: 900;
+	background-color:Navy ;
+	border: 10px solid black;
+	border-bottom: 6px solid black;
+	border-top: 6px solid black;
+}
+/*game table end*/
+
+/*buttons within the table*/
+input.q{
+	position:relative;
+	height:58px;
+	width:135px;
+	color:yellow;
+	background-color:navy;
+	font-weight: 900;
+	font-size: 30px;
+	padding-bottom:40px;
+	padding-top:6px;
+}
+input.q:hover {
+    background-color: white; 
+    color: black;
+}
+/*div surounding the button*/
+.cell{
+		position:relative;
+}
+/*check box*/
+.check{
+	position:absolute;
+    right:0px;
+    top:0px;
+}
+/**/
+
+
+/*score board*/
+/*allscores is the div that hold the 4 score divs*/
+div.allscores{
+	width:1235px;
+	height:100px;
+	margin-left:auto; 
+    margin-right:auto;
+	margin-top:0px;
+	padding:0px;
+}
+/*the individual score box*/
+div.score{
+	height:85px;
+	width: 240px;
+	border-style: double;
+	margin-left: 50px;
+	float: left;
+	margin-top:10px;
+}
+/*score settings*/
+.sSettings{
+	float: left;
+	margin:0px;
+	margin-top:3px;
+	margin-left:3px;
+	padding-bottom:0px;
+	text-align:right;
+}
+/*one two three four are different background colors of different score boxes*/
+div.one{
+		background-color:#FF4141;
+}
+div.two{
+		background-color:lime;
+}
+div.three{
+		background-color:cyan;
+}
+div.four{
+		background-color:yellow;
+}
+/*name and money changes font size*/
+.name{
+    font-size: 15px;
+}
+.money{
+    font-size: 31px;
+}
+/*decrease width for input text and number box*/
+.dwidth
+{
+	width:100px;
+}
+/*increase size is for just the number box*/
+.iSize
+{
+	margin-left:5px;
+	font-size: 31px;
+}
+/*end of score board*/
+
+
+
+/*used to hide answer on the question page*/
 div.b{
 	visibility:hidden;
 }
-
 #a:hover + #b {
 	visibility:visible;
     /*background: #ccc*/
 }
+/*enf*/
+
+/*ids below are used to format vertical table to the left and right of the screen and with the game table in the center*/
 #container {
     position:relative;
     height:415px;
@@ -234,6 +255,5 @@ div.b{
     right:0px;
     bottom:0px;
 	margin-right:50px;
-
 }
 
