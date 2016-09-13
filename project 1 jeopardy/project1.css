@@ -1,5 +1,9 @@
-p {
+p{
 	font-family: verdana;
+}
+img{
+	margin: 0 auto;
+	height:100px;
 }
 body{
 	margin:0;
@@ -9,7 +13,7 @@ h1 {
 	text-align:center;
 	font-size: 75px;
 	margin-bottom:5px;
-	margin-top:35px;
+	margin-top:20px;
 }
 h2 {
 	text-align:center;
@@ -18,7 +22,7 @@ h2 {
 
 table.visuals{
 	background-color:black;
-	font-size: 50px;
+	font-size: 43px;
 	margin-right:-100px;
 	float:left;
 	width:10px;
@@ -36,7 +40,7 @@ td.top{
 	border-left: 20px solid #2874A6    ;
 	border-right: 20px solid #2874A6    ;
 	border-top: 20px solid #2874A6    ;
-	height:24px;
+	height:26px;
 
 	margin-bottom:0;
 	}
@@ -46,14 +50,14 @@ td.bottom{
 	border-right: 20px solid #2874A6    ;
 	border-bottom: 20px solid #2874A6    ;
 
-	height:24px;
+	height:26px;
 	margin-top:0;
 	}
 	
 
 table.game{
 	background-color:black;
-	font-size: 45px;
+	font-size: 35px;
     margin-left:auto; 
     margin-right:auto;
 }
@@ -62,8 +66,8 @@ th.game{
 	text-align:center;
 	background-color:blue;
 	padding:10px;
-	border: 15px solid black;
-	font-size: 30px;
+	border: 10px solid black;
+	font-size: 25px;
 
 }
 td.game{	
@@ -71,18 +75,18 @@ td.game{
 	text-align:center;
     font-weight: 900;
 	background-color:Navy ;
-	border: 15px solid black;
-	border-bottom: 5px solid black;
-	border-top: 5px solid black;
+	border: 10px solid black;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
 }
 td.lastRow{
 	color:yellow;
 	text-align:center;
     font-weight: 900;
 	background-color:Navy ;
-	border: 15px solid black;
-	border-bottom: 10px solid black;
-	border-top: 5px solid black;
+	border: 10px solid black;
+	border-bottom: 6px solid black;
+	border-top: 6px solid black;
 }
 
 
@@ -92,25 +96,32 @@ td.lastRow{
 .fLeft{
 	float: left;
 	margin: 10px;
+	margin-bottom:0px;
+	margin-top:1px;
+	padding-bottom:0px;
 	text-align:right;
 }
 .fLeftb{
 	float: left;
-	margin-top:30px;
-	margin-bottom:30px;
-	margin-left: 88px;
+	margin-top:10px;
+	margin-bottom:5px;
+	margin-left: 73px;
+}
+.rmargin{
+	margin:0px;
+	margin-top:3px;
+	margin-left:3px;
 }
 .dwidth{
 	width:100px;
 }
 div.score{
-	height:100px;
-	width: 280px;
+	height:85px;
+	width: 240px;
 	border-style: double;
-	background-color:red;
 }
 div.one{
-		background-color:red;
+		background-color:#FF4141;
 }
 div.two{
 		background-color:lime;
@@ -128,30 +139,28 @@ div.four{
     font-size: 15px;
 }
 .iSize{
-	margin-left:11px;
-	margin-top:8px;
-
+	margin-left:5px;
 	font-size: 31px;
 }
 
 
 input.q{
-	height:70px;
-	width:220px;
+	height:30px;
+	width:135px;
 	color:yellow;
 	background-color:navy;
 	font-weight: 900;
-	font-size: 55px;
-	padding-bottom:80px;
+	font-size: 30px;
+	padding-bottom:40px;
 }
 input:hover {
     background-color: white; 
     color: black;
 }
-input:visited{
-color:grey; }
+
 .check{
 	float:right;
+	margin:0;
 }
 
 ul.nav {
@@ -163,10 +172,12 @@ ul.nav {
     position: fixed;
     top: 0;
     width: 100%;
+	height:30px;
 }
 li.navE {
     float: left;
-}
+	margin-top:-8px;
+	}
 li.navE a {
     display: block;
     color: white;
@@ -187,14 +198,13 @@ div.allscores{
 }
 #container {
     position:relative;
-    height:455px;
-    width:99.35%;
+    height:415px;
+    width:99.29%;
     border:thick solid black;
 	background-color:grey;
 }
 #container div {
     background:grey;
-    width:200px;
 }
 #left {
     position:absolute;
@@ -211,7 +221,7 @@ div.allscores{
     position:absolute;
     right:0px;
     bottom:0px;
-	margin-right:52px;
+	margin-right:50px;
 
 }
 
