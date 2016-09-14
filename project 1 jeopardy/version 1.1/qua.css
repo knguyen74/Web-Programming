@@ -1,0 +1,36 @@
+h2 { text-align: center;
+     font-size: 40px; }
+
+table{ 
+
+	background-color: #800000;
+	font-size: 55px;
+	border: 20px solid black;
+	padding:10px;
+}
+
+th{     color:white;
+	text-align:center;
+	background-color:#ff5050;
+}
+
+body {background-color: #ffffcc;
+
+}
+
+table { margin: 0 auto; }
+
+
+div.b{
+	visibility:hidden;
+}
+
+div.allscores{
+	    margin-left:auto; 
+    margin-right:auto;
+}
+
+#a:hover + #b {
+	visibility:visible;
+    /*background: #ccc*/
+}
