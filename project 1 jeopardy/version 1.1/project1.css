@@ -217,17 +217,6 @@ div.four{
 /*end of score board*/
 
 
-
-/*used to hide answer on the question page*/
-div.b{
-	visibility:hidden;
-}
-#a:hover + #b {
-	visibility:visible;
-    /*background: #ccc*/
-}
-/*enf*/
-
 /*ids below are used to format vertical table to the left and right of the screen and with the game table in the center*/
 #container {
     position:relative;
