@@ -5,7 +5,7 @@
 </head>
 
  <body>
- <!--the cell height is not the same length as cell width -->
+ <!--the overall table height is 323px while width is 300px b/c only the width of a table can restricted by the css easily -->
  <?php
  echo '<table border="1" width="300"  cellpadding="1" cellspacing="1">'; 
 for ($x=0;$x<=7;$x++){
