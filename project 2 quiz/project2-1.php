@@ -11,6 +11,16 @@ session_start();
 $questions = $_SESSION['qarray'];
 $Allchoice = $_SESSION['aarray'];
 $numofq = $_SESSION['num'];
+$sum=0;
+
+for($y=0;$y<$numofq;$y++)
+{
+	if($_POST["q".$y]==0)
+	{
+		$sum++;
+	}
+}
+echo '<h1>You have gotten '.$sum.'/'.$numofq.' correct!</h1>';
 
 echo '<table>';
 for ($x=0;$x<$numofq;$x++)
