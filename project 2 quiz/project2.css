@@ -1,7 +1,16 @@
 
-div{
+div.one{
 	width: 400px;
 margin: 100px auto;
+}
+div.two{
+	width: 1200px;
+	margin: 100px auto;
+}
+.center{
+	width: 400px;
+	margin: 100px auto;
+	text-align:center;
 }
 .questionblock
 {
@@ -21,4 +30,19 @@ img{
 }
 .makehidden{
 	display: none;
+}
+.tab{
+	margin-left:30px;
+}
+.f{
+	height: 250px;
+	width:400px;
+}
+.f2{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }

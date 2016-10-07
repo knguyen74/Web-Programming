@@ -10,7 +10,7 @@
 <body>
 <form action="project2-1.php" 
 method="post"> 
-<div>
+<div class="one">
 <?php
 	session_start();
 
@@ -195,10 +195,10 @@ method="post">
 			echo '<div class="questionblock">';
 				echo '<p>'.$y.') '.$questions[$x][1].'</p>'; //$questions[question #][id(0) or question(1)]
 				
-				echo '<p><input name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][0][0].'"> '.$Allchoice[$loc][0][1].' </p>';//$Allchoice[question #][4 answer choices(0-3)][id(0) or choice(1)]
-				echo '<p><input name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][1][0].'"> '.$Allchoice[$loc][1][1].' </p>';
-				echo '<p><input name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][2][0].'"> '.$Allchoice[$loc][2][1].' </p>';
-				echo '<p><input name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][3][0].'"> '.$Allchoice[$loc][3][1].' </p>';
+				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][0][0].'"> '.$Allchoice[$loc][0][1].' </p>';//$Allchoice[question #][4 answer choices(0-3)][id(0) or choice(1)]
+				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][1][0].'"> '.$Allchoice[$loc][1][1].' </p>';
+				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][2][0].'"> '.$Allchoice[$loc][2][1].' </p>';
+				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][3][0].'"> '.$Allchoice[$loc][3][1].' </p>';
 				echo '<p><input class="makehidden" name="q'.$x.'" type="radio" value="4" checked></p>';				
 				
 			echo '</div>';
