@@ -195,10 +195,10 @@ method="post">
 			echo '<div class="questionblock">';
 				echo '<p>'.$y.') '.$questions[$x][1].'</p>'; //$questions[question #][id(0) or question(1)]
 				
-				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][0][0].'"> '.$Allchoice[$loc][0][1].' </p>';//$Allchoice[question #][4 answer choices(0-3)][id(0) or choice(1)]
-				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][1][0].'"> '.$Allchoice[$loc][1][1].' </p>';
-				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][2][0].'"> '.$Allchoice[$loc][2][1].' </p>';
-				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][3][0].'"> '.$Allchoice[$loc][3][1].' </p>';
+				echo '<p class="heffect"><input id="q'.$x.'0" class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][0][0].'"> <label for="q'.$x.'0"> '.$Allchoice[$loc][0][1].' </label></p>';//$Allchoice[question #][4 answer choices(0-3)][id(0) or choice(1)]
+				echo '<p class="heffect"><input id="q'.$x.'1" class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][1][0].'"> <label for="q'.$x.'1"> '.$Allchoice[$loc][1][1].' </label></p>';
+				echo '<p class="heffect"><input id="q'.$x.'2" class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][2][0].'"> <label for="q'.$x.'2"> '.$Allchoice[$loc][2][1].' </label></p>';
+				echo '<p class="heffect"><input id="q'.$x.'3" class="tab" name="q'.$x.'" type="radio" value="'.$Allchoice[$loc][3][0].'"> <label for="q'.$x.'3"> '.$Allchoice[$loc][3][1].' </label></p>';
 				echo '<p><input class="makehidden" name="q'.$x.'" type="radio" value="4" checked></p>';				
 				
 			echo '</div>';

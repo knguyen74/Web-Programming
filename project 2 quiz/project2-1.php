@@ -23,7 +23,7 @@ for($y=0;$y<$numofq;$y++)
 
 echo '<table>';
 	echo '<tr>';
-	echo '<td>';
+	echo '<td class="sw">';
 	if($sum==$numofq)
 	{
 		echo '<img class="f" src="fireworks.jpg" alt="image missing">';
@@ -32,7 +32,7 @@ echo '<table>';
 	echo '<td>';
 	echo '<h1>You have gotten '.$sum.'/'.$numofq.' correct!</h1>';
 	echo'</td>';
-	echo '<td>';
+	echo '<td class="sw">';
 	if($sum==$numofq)
 	{
 		echo '<img class="f f2" src="fireworks.jpg" alt="image missing">';
@@ -50,6 +50,10 @@ for ($x=0;$x<$numofq;$x++)
 		{
 			echo '<img class="chg" src="check.png" alt="image missing">';
 		}
+		elseif($_POST["q".$x]==4)
+		{
+			echo '<img class="chg" src="question.png" alt="image missing">';
+		}
 		else
 		{
 			echo '<img class="chg" src="x.png" alt="image missing">';
@@ -59,7 +63,7 @@ for ($x=0;$x<$numofq;$x++)
 		$loc = $questions[$x][0];
 		$y=$x+1;
 		echo '<div class="questionblock">';
-			echo '<p>'.$y.') '.$questions[$x][1].'</p>'; //$questions[question #][id(0) or question(1)]
+			echo '<p><br>'.$y.') '.$questions[$x][1].'</p>'; //$questions[question #][id(0) or question(1)]
 			if($_POST["q".$x]==$Allchoice[$loc][0][0])
 			{
 				echo '<p><input class="tab" name="q'.$x.'" type="radio" value="basic" checked disabled> '.$Allchoice[$loc][0][1].' </p>';//$Allchoice[question #][4 answer choices(0-3)][id(0) or choice(1)]

@@ -18,11 +18,11 @@ div.two{
 }
 .chg{
 	float:right;
-	margin-top: 80px;
+	margin-top: 0px;
 }
 img{
 	height:50px;
-	weight:50px;
+	width:50px;
 }
 .topalign
 {
@@ -45,4 +45,11 @@ img{
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
+}
+.sw{
+	width:400px;
+}
+.heffect:hover{
+	background-color:black;
+	color:white;
 }
