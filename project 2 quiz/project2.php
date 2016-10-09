@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Quiz php</title>
+  <title>Animal Quiz</title>
   <link rel="stylesheet" type="text/css" href="project2.css">
 </head>
 

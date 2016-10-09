@@ -1,6 +1,8 @@
-<html> 
-<head><title>Answers</title></head> 
+<!DOCTYPE html>
+<html lang="en"> 
+<head><title>Answers</title>
 <link rel="stylesheet" type="text/css" href="project2.css">
+</head> 
 <body>
 <form action="project2.php" 
 method="post"> 
