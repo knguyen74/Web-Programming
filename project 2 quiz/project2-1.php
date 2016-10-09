@@ -23,21 +23,31 @@ for($y=0;$y<$numofq;$y++)
 
 echo '<table>';
 	echo '<tr>';
-	echo '<td class="sw">';
 	if($sum==$numofq)
 	{
+		echo '<td class="sw">';
 		echo '<img class="f" src="fireworks.jpg" alt="image missing">';
+		echo '</td>';
 	}
-	echo '</td>';
-	echo '<td>';
+	else
+	{
+		echo '<td>';
+		echo '</td>';
+	}
+	echo '<td class="sw">';
 	echo '<h1>You have gotten '.$sum.'/'.$numofq.' correct!</h1>';
 	echo'</td>';
-	echo '<td class="sw">';
 	if($sum==$numofq)
 	{
+		echo '<td class="sw">';
 		echo '<img class="f f2" src="fireworks.jpg" alt="image missing">';
+		echo '</td>';
 	}
-	echo '</td>';
+	else
+	{
+		echo '<td>';
+		echo '</td>';
+	}
 	echo '</tr>';
 
 

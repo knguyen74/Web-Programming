@@ -1,20 +1,30 @@
 
 div.one{
-	width: 400px;
-margin: 100px auto;
-}
+	display: inline-block;
+	margin: 25px auto;
+	background-color:white;
+	border-style: double;
+	border-width: 15px;
+	padding:25px;
+	}
 div.two{
-	width: 1200px;
-	margin: 100px auto;
-}
+display: inline-block;
+	margin: 25px auto;
+	background-color:white;
+	border-style: double;
+    border-width: 15px;
+	padding:25px;
+
+	}
 .center{
 	width: 400px;
-	margin: 100px auto;
+	margin-right:auto;
+	margin-left:auto;
 	text-align:center;
 }
 .questionblock
 {
-	<!--background-color:grey;-->
+	text-align:left;
 }
 .chg{
 	float:right;
@@ -48,8 +58,23 @@ img{
 }
 .sw{
 	width:400px;
+	text-align:center;
 }
 .heffect:hover{
 	background-color:black;
 	color:white;
+}
+body
+{
+	background-image: url("snowball.png");
+	text-align:center;
+}
+h1{
+	font-size: 50px;
+	font-family:impact;
+}
+table
+{
+	margin-right:auto;
+	margin-left:auto;
 }

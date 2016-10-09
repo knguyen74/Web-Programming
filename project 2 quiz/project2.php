@@ -14,7 +14,8 @@ method="post">
 <?php
 	session_start();
 
-
+	echo '<h1 class="center">Animal Quiz</h1>';
+	
 	$questions = array (
 	array ('0',"q0"), 	//original position
 	array ('1',"q1"),
