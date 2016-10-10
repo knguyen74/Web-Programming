@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Animal Quiz</title>
+  <title>Zooland</title>
   <link rel="stylesheet" type="text/css" href="project2.css">
 </head>
 
@@ -14,173 +14,174 @@ method="post">
 <?php
 	session_start();
 
-	echo '<h1 class="center">Animal Quiz</h1>';
+	echo '<h1 class="center">Zooland</h1>';
 	
-	$questions = array (
-	array ('0',"q0"), 	//original position
-	array ('1',"q1"),
-	array ('2',"q2"),
-	array ('3',"q3"),
-	array ('4',"q4"),
-	array ('5',"q5"),
-	array ('6',"q6"),
-	array ('7',"q7"),
-	array ('8',"q8"),
-	array ('9',"q9"),
-	array ('10',"q10"),
-	array ('11',"q11"),
-	array ('12',"q12"),
-	array ('13',"q13"),
-	array ('14',"q14"),
-	array ('15',"q15"),
-	array ('16',"q16"),
-	array ('17',"q17"),
-	array ('18',"q18"),
-	array ('19',"q19"),
+		$questions = array (
+	array ('0'," How many stomachs does a cow have?"), 	//original position
+	array ('1'," What is the longest snake?"),
+	array ('2'," What is the largest Frog?"),
+	array ('3'," What is the fastest bird (in the air) in the world?"),
+	array ('4'," What is the largest kind of shark?"),
+	array ('5'," How long can a shark go without eating?"),
+	array ('6'," About how many different kinds of sharks are there?"),
+	array ('7'," What are baby rabbits called?"),
+	array ('8'," Which if these is NOT a breed of rabbit?"),
+	array ('9'," How many dog years are in a human year?"),
+	array ('10',"What is a baby deer called?"),
+	array ('11',"What is the largest animal on the planet"),
+	array ('12',"Which monkey is the world's fastest primate?"),
+	array ('13',"Where do Gelada Monkeys live?"),
+	array ('14',"What is the most popular purebred cat breed?"),
+	array ('15',"Which one of these birds is a type of parrot? "),
+	array ('16',"Where do golden hamster live in the wild?"),
+	array ('17',"Which one is the fastest snake in the world?"),
+	array ('18',"What is the most popular dog breed in the U.S.?"),
+	array ('19',"Which one is the most acute sense for a dog?"),
 	);
-	
+
 	
     shuffle($questions);
 
 	$choice0 = array 
 	(
-	array (0,"A0"),
-	array (1,"B0"),
-	array (2,"C0"),
-	array (3,"D0"));
+	array (0," 4"),
+	array (1," 1"),
+	array (2,"2"),
+	array (3,"3"));
 	
 	$choice1 = array 
 	(
-	array (0,"A1"),
-	array (1,"B1"),
-	array (2,"C1"),
-	array (3,"D1"));
+	array (0," Reticulated python"),
+	array (1," Anaconda"),
+	array (2," Green tree snake"),
+	array (3," Corn snake"));
 	
 	$choice2 = array 
 	(
-	array (0,"A2"),
-	array (1,"B2"),
-	array (2,"C2"),
-	array (3,"D2"));
+	array (0," African Goliath Frog"),
+	array (1," Poison Dart Frog"),
+	array (2," Cane Toad"),
+	array (3," North American Bullfrog"));
 	
 	$choice3 = array 
 	(
-	array (0,"A3"),
-	array (1,"B3"),
-	array (2,"C3"),
-	array (3,"D3"));
+	array (0," Peregrine falcon"),
+	array (1," Red-billed quelea"),
+	array (2," Ruby Throated Hummingbird"),
+	array (3," North African ostrich"));
 	
 	$choice4 = array 
 	(
-	array (0,"A4"),
-	array (1,"B4"),
-	array (2,"C4"),
-	array (3,"D4"));
+	array (0," Whale Shark"),
+	array (1," Basking Shark"),
+	array (2," Great White Shark"),
+	array (3," Great Hamerhead Shark"));
 	
 	$choice5 = array 
 	(
-	array (0,"A5"),
-	array (1,"B5"),
-	array (2,"C5"),
-	array (3,"D5"));
+	array (0," A month"),
+	array (1," 2 weeks"),
+	array (2," 1 week"),
+	array (3," 3 days"));
 	
 	$choice6 = array 
 	(
-	array (0,"A6"),
-	array (1,"B6"),
-	array (2,"C6"),
-	array (3,"D6"));
+	array (0," 350 - 450"),
+	array (1," Under 250"),
+	array (2," 250 - 350"),
+	array (3," Over 500"));
 	
 	$choice7 = array 
 	(
-	array (0,"A7"),
-	array (1,"B7"),
-	array (2,"C7"),
-	array (3,"D7"));
+	array (0," Kits"),
+	array (1," Pups"),
+	array (2," Cuties"),
+	array (3," Baby rabbits"));
 	
 	$choice8 = array 
 	(
-	array (0,"A8"),
-	array (1,"B8"),
-	array (2,"C8"),
-	array (3,"D8"));
+	array (0," Devon Rex"),
+	array (1," Californian"),
+	array (2," Thrianta"),
+	array (3," Hulstlander"));
 	
 	$choice9 = array 
 	(
-	array (0,"A9"),
-	array (1,"B9"),
-	array (2,"C9"),
-	array (3,"D9"));
+	array (0,"7"),
+	array (1,"5"),
+	array (2,"11"),
+	array (3,"30"));
 
 	$choice10 = array 
 	(
-	array (0,"A10"),
-	array (1,"B10"),
-	array (2,"C10"),
-	array (3,"D10"));
+	array (0," Fawn"),
+	array (1," Deer"),
+	array (2," Cow"),
+	array (3," Meow"));
 	
 	$choice11 = array 
 	(
-	array (0,"A11"),
-	array (1,"B11"),
-	array (2,"C11"),
-	array (3,"D11"));
+	array (0,"Blue whale"),
+	array (1,"Giraffe"),
+	array (2,"Anaconda"),
+	array (3,"Rhino"));
 	
 	$choice12 = array 
 	(
-	array (0,"A12"),
-	array (1,"B12"),
-	array (2,"C12"),
-	array (3,"D12"));
+	array (0,"Patas Monkey"),
+	array (1,"Gorilla"),
+	array (2,"Howler Monkey"),
+	array (3,"Spider Monkey"));
 	
 	$choice13 = array 
 	(
-	array (0,"A13"),
-	array (1,"B13"),
-	array (2,"C13"),
-	array (3,"D13"));
+	array (0,"Ethiopia"),
+	array (1,"Colombia"),
+	array (2,"India"),
+	array (3,"Costa Rica"));
 	
 	$choice14 = array 
 	(
-	array (0,"A14"),
-	array (1,"B14"),
-	array (2,"C14"),
-	array (3,"D14"));
+	array (0,"Persian"),
+	array (1,"Siamese"),
+	array (2,"Russian Blue"),
+	array (3,"Maine Coon"));
 	
 	$choice15 = array 
 	(
-	array (0,"A15"),
-	array (1,"B15"),
-	array (2,"C15"),
-	array (3,"D15"));
+	array (0,"Parakeet"),
+	array (1,"Canary"),
+	array (2,"Finch"),
+	array (3,"All of the above"));
 	
 	$choice16 = array 
 	(
-	array (0,"A16"),
-	array (1,"B16"),
-	array (2,"C16"),
-	array (3,"D16"));
+	array (0,"Middle East"),
+	array (1,"North America"),
+	array (2,"Australia"),
+	array (3,"Europe"));
 	
 	$choice17 = array 
 	(
-	array (0,"A17"),
-	array (1,"B17"),
-	array (2,"C17"),
-	array (3,"D17"));
+	array (0,"Black Mamba"),
+	array (1,"Viper"),
+	array (2,"Python"),
+	array (3,"Cobra"));
 	
 	$choice18 = array 
 	(
-	array (0,"A18"),
-	array (1,"B18"),
-	array (2,"C18"),
-	array (3,"D18"));
+	array (0,"Labrador Retriever"),
+	array (1,"Poodle"),
+	array (2,"Beagle"),
+	array (3,"German Shepherd"));
 	
 	$choice19 = array 
 	(
-	array (0,"A19"),
-	array (1,"B19"),
-	array (2,"C19"),
-	array (3,"D19"));
+	array (0,"Smell"),
+	array (1,"Hearing"),
+	array (2,"Sight"),
+	array (3,"Taste"));
+
 		
       shuffle($choice0); shuffle($choice1); shuffle($choice2); shuffle($choice3); shuffle($choice4); shuffle($choice5); shuffle($choice6); shuffle($choice7); shuffle($choice8); shuffle($choice9);
       shuffle($choice10); shuffle($choice11); shuffle($choice12); shuffle($choice13); shuffle($choice14); shuffle($choice15); shuffle($choice16); shuffle($choice17); shuffle($choice18); shuffle($choice19);
