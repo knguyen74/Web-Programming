@@ -173,6 +173,8 @@ function fadeout()
 	{
 		clearInterval(fades);
 		fadevalue=1;
+		document.getElementById(tilefade0).removeAttribute("onclick");
+		document.getElementById(tilefade1).removeAttribute("onclick");
 		enablediv();
 	}
 	else
