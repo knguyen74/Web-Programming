@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="matchinggame.js">
+  </script>
+	<style>
+div#memory_board{
+	background:#CCC;
+	border:#999 1px solid;
+	width:665px;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+}
+div#memory_board > div{
+	background: url(tile_bg.jpg) no-repeat;
+	border:#000 1px solid;
+	width:71px;
+	height:71px;
+	float:left;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	cursor:pointer;
+	text-align:center;
+}
+	#btn1
+	{
+	display: none;
+	}
+	#btn2
+	{
+	display: none;
+	}
+	#later
+	{
+	display: none;
+	}
+	.centering{
+	text-align:center;}
+	</style>
+  </head>
+<body>
+  <div class="centering">
+  <p><b>Rules of the game</b><br>
+  Select pairs of pictures to match and select difficulty level.<br>
+	You are given 3 levels of difficulty 3, 5, 8 seconds to memorize the locations.<br>
+	You lose when you run out of time. Time is based on the amount of pairs of pictures you have selected.<br>
+	120 seconds for 8 pictures, 150 seconds for 10 pictures, and 180 seconds for 12 pictures<br>
+	Press start to play and begins count down.
+	</p>
+    <label><b>Choose Total Images: </b></label>
+<select id="num" name="images"> 
+<option value="0" selected> 8 
+<option value="1"> 10 
+<option value="2"> 12 
+</select>   
+
+    <label><b>Choose Total Images: </b></label>
+<select id="dif" name="difficulty"> 
+<option value="8000" selected> easy 
+<option value="5000"> Medium 
+<option value="3000"> Hard
+</select>   
+
+
+  <input type="button" id="btn0" onclick="newBoard();" value="Set">
+  <br/>   
+	<div id="memory_board">Select your Settings</div>
+	<input type="button" id="btn1" onclick ="start()" value="Start">
+		<input type="button" id="btn2" onclick ="window.location.href='matchinggame.html'" value="New Game">
+
+	   <p id="later"><br><span id='thecountdown'></span> seconds remaining</p>
+
+	</div>
+</body>
+</html>
